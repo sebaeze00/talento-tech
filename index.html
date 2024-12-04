@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talento Tech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos a Talento Tech</h1>
+    <!-- Navegación -->
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Sección de Imagen -->
+  <section id="inicio">
+    <h2>Explora Talento Tech</h2>
+    <img src="https://i.blogs.es/4af3ec/setup/1366_2000.jpg" alt="Imagen principal de Talento Tech">
+    <p>Conoce nuestros productos y servicios innovadores.</p>
+  </section>
+  
+  <!-- Sección Productos -->
+  <section id="productos">
+    <h2>Productos</h2>
+    <div class="productos-container">
+      <div class="card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_735145-MLA48131216536_112021-O.webp" alt="Producto 1">
+        <p>Producto 1</p>
+      </div>
+      <div class="card">
+        <img src="https://www.maestrosdelweb.com/images/monitor_vga.jpg" alt="Producto 2">
+        <p>Producto 2</p>
+      </div>
+      <div class="card">
+        <img src="https://static.gigabyte.com/StaticFile/Image/Global/cc0194191c1802782011c72cf475a9de/Product/40948/webp/300" alt="Producto 3">
+        <p>Producto 3</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Video -->
+  <section id="video">
+    <h2>Video de Presentación</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ab5sdxdcPjQ" 
+            title="Video de Talento Tech" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </section>
+  <!-- Sección Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/xanyvena" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Talento Tech</p>
+  </footer>
+</body>
+</html>
