@@ -15,13 +15,21 @@ El propósito principal de esta página es proporcionar una experiencia clara, m
 ## Estructura
 
 La página está dividida en las siguientes secciones:
+
 1. **Inicio:** Introducción a Talento Tech.
-2. **Sobre Nosotros:** Información sobre nuestra misión y valores.
-3. **Servicios:** Descripción de los servicios que ofrecemos.
-4. **Contacto:** Información para comunicarse con nosotros.
+2. **Productos:** Muestra una selección de productos con imágenes y descripciones. Puedes hacer clic en cualquier producto para ver más detalles.
+3. **Video:** Video de presentación de la empresa y sus servicios.
+4. **Contacto:** Formulario para que los usuarios se pongan en contacto con nosotros, proporcionando su nombre, correo electrónico y un mensaje.
+
+## Funcionalidad
+
+- **Formulario de contacto:** Permite a los usuarios enviar un mensaje con su nombre, correo electrónico y mensaje. El formulario está integrado con un servicio de terceros (Formspree) para recibir los mensajes.
+- **Generación dinámica de productos:** Los productos se generan dinámicamente a partir de un array de objetos en el script, mostrando imágenes y descripciones.
+- **Interactividad:** Cada producto puede ser seleccionado para ver una descripción ampliada.
 
 ## Cómo usar este repositorio
 
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/sebaeze00/talento-tech.git
+   ```
