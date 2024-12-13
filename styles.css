@@ -1,207 +1,285 @@
 /* Estilos generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Estilo para la Navegación */
-  nav {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: #4CAF50;
-  }
-  
-  /* Estilo para la Sección de Imagen */
-  #inicio {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #fff;
-  }
-  
-  #inicio img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-  
-  /* Sección de Productos */
-  #productos {
-    padding: 20px;
-  }
-  
-  .productos-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .card p {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  /* Estilo para el Video */
-  #video {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  #video iframe {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  /* Estilo para la Sección Contacto */
-  #contacto {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  #contacto form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #contacto label {
-    margin-bottom: 8px;
-    font-size: 16px;
-  }
-  
-  #contacto input,
-  #contacto textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  #contacto button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #contacto button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Media Query para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .productos-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .card {
-      width: 80%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    #inicio img {
-      width: 100%;
-    }
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
+/* Estilo para la Navegación */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
 
-  /* Estilo para la Sección de Productos */
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #4CAF50;
+}
+
+/* Sección de Inicio */
+#inicio {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+#inicio img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Sección de Productos */
 #productos {
-    padding: 20px;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.producto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.producto h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.producto p {
+  font-size: 14px;
+  color: #777;
+}
+
+.agregar {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.agregar:hover {
+  background-color: #45a049;
+}
+
+/* Sección de Personajes API */
+.personajes-api-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Sección de Video */
+#video {
+  padding: 20px;
+  text-align: center;
+}
+
+#video iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Sección Carrito */
+.carrito-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.carrito-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#carritoItems {
+  margin-bottom: 20px;
+}
+
+#carritoItems div {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#carritoItems .eliminar {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#carritoItems .eliminar:hover {
+  background-color: #e53935;
+}
+
+#vaciarCarrito {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#vaciarCarrito:disabled {
+  background-color: #b0bec5;
+}
+
+#vaciarCarrito:hover {
+  background-color: #1976d2;
+}
+
+/* Sección Contacto */
+#contacto {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacto label {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+#contacto input,
+#contacto textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contacto button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contacto button:hover {
+  background-color: #45a049;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .productos-container,
+  .personajes-api-container {
+    grid-template-columns: 1fr;
   }
-  
-  .productos-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
-  }
-  
+
   .card {
-    background-color: #fff;
-    padding: 20px;
-    width: 30%; /* Establece el tamaño de cada tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 8px;
-    overflow: hidden; /* Evita que las imágenes sobresalgan de la tarjeta */
+    width: 80%;
   }
-  
-  .card img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 200px; /* Define una altura máxima para las imágenes, pero sin recortarlas */
-    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla */
-    border-radius: 8px; /* Redondea las esquinas de la imagen */
+}
+
+@media (max-width: 480px) {
+  #inicio img {
+    width: 100%;
   }
-  
-  .card p {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  /* Media Query para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .productos-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .card {
-      width: 80%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    #inicio img {
-      width: 100%;
-    }
-  }
+}

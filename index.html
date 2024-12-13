@@ -29,14 +29,6 @@
       <p>Conoce nuestros productos y servicios innovadores.</p>
     </section>
 
-    <!-- Sección Productos -->
-    <section id="productos">
-      <h2>Productos</h2>
-      <div class="productos-container">
-        <!-- Acá se van a estar generando los productos de Js -->
-      </div>
-    </section>
-
     <!-- Sección Video -->
     <section id="video">
       <h2>Video de Presentación</h2>
@@ -50,6 +42,27 @@
         allowfullscreen
       >
       </iframe>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos">
+      <h2>Productos Hardcodeados</h2>
+      <div class="productos-container" id="productos-container">
+        <!-- Los productos serán generados dinámicamente por JavaScript -->
+      </div>
+    </section>
+
+    <div id="carrito" class="carrito-container">
+      <h3>Tu Carrito</h3>
+      <div id="carritoItems"></div>
+      <button id="vaciarCarrito" disabled>Vaciar Carrito</button>
+    </div>
+
+    <section id="personajes-api">
+      <h2>Estos son algunos de nuestros clientes sastifechos</h2>
+      <div class="personajes-api-container">
+        <!-- Acá se van a mostrar los personajes obtenidos de la API -->
+      </div>
     </section>
 
     <!-- Sección Contacto -->
